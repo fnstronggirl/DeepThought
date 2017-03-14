@@ -24,7 +24,8 @@ class DeepThought(object):
 
 	def process_audio(self, audio, recognizer):
 		try:
-			speech_string = recognizer.recognize_sphinx(audio)
+			#we are going to change this line and not use sphinx
+			#speech_string = recognizer.recognize_sphinx(audio)
 			print(speech_string)
 			if ("ell" in speech_string) or ("thought" in speech_string) or ("deep" in speech_string):
 				spoken_hello = 1
