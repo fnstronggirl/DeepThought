@@ -10,8 +10,6 @@ spoken_hello = 0
 
 class DeepThought(object):
 	def __init__(self):
-		self.name = "Richard"
-
 
 	def listen(self):
 		recognizer = sr.Recognizer()
@@ -40,10 +38,10 @@ class DeepThought(object):
 
 
 def main():
-	mhqthought = DeepThought()
+	deep_thought = DeepThought()
 	while True:
-		speech, recog = mhqthought.listen()
-		response_string = mhqthought.process_audio(speech, recog)
+		speech, recog = deep_thought.listen()
+		response_string = deep_thought.process_audio(speech, recog)
 		print(response_string)
 
 if __name__ == "__main__":
